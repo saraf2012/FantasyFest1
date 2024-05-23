@@ -1,55 +1,69 @@
-/* color palette from <https://github.com/vuejs/theme> */
+/* Color palette from Vue.js theme: https://github.com/vuejs/theme */
 :root {
+  /* White shades */
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
+  /* Black shades */
   --vt-c-black: #181818;
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
+  /* Indigo color */
   --vt-c-indigo: #2c3e50;
 
+  /* Divider colors */
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
   --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
   --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
 
+  /* Text colors */
   --vt-c-text-light-1: var(--vt-c-indigo);
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 }
 
-/* semantic color variables for this project */
+/* Semantic color variables for this project */
 :root {
+  /* Background colors */
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
 
+  /* Border colors */
   --color-border: var(--vt-c-divider-light-2);
   --color-border-hover: var(--vt-c-divider-light-1);
 
+  /* Heading and text colors */
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
 
+  /* Section gap */
   --section-gap: 160px;
 }
 
+/* Dark mode media query */
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Dark mode background colors */
     --color-background: var(--vt-c-black);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);
 
+    /* Dark mode border colors */
     --color-border: var(--vt-c-divider-dark-2);
     --color-border-hover: var(--vt-c-divider-dark-1);
 
+    /* Dark mode heading and text colors */
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
   }
 }
 
+/* Global styles */
 *,
 *::before,
 *::after {
@@ -58,6 +72,7 @@
   font-weight: normal;
 }
 
+/* Body styles */
 body {
   min-height: 100vh;
   color: var(--color-text);

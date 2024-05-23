@@ -1,35 +1,40 @@
+/* Importing base styles */
 @import './base.css';
 
+/* Styles for the main app container */
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  max-width: 1280px; /* Limiting width */
+  margin: 0 auto; /* Centering horizontally */
+  padding: 0rem; /* Resetting padding */
+  font-weight: normal; /* Setting normal font weight */
 }
 
+/* Styles for links and elements with class 'green' */
 a,
 .green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  text-decoration: none; /* Removing underline */
+  color: hsla(160, 100%, 37%, 1); /* Setting color */
+  transition: 0.4s; /* Adding transition effect */
+  padding: 3px; /* Adding padding */
 }
 
+/* Hover styles for links */
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: hsla(160, 100%, 37%, 0.2); /* Adding background color on hover */
   }
 }
 
+/* Styles for larger screens */
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
+    display: flex; /* Using flexbox layout */
+    place-items: center; /* Centering vertically and horizontally */
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    display: grid; /* Using grid layout */
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    padding: 0 0rem; /* Resetting padding */
   }
 }
